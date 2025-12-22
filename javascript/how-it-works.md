@@ -22,7 +22,7 @@ The language is the same — **only the runtime APIs differ**.
 
 | Component           | Description                                         |
 | ------------------- | --------------------------------------------------- |
-| **Call Stack**      | Executes JavaScript code line by line               |
+| **Call Stack**      | JavaScript code gets executed line by line here     |
 | **Runtime APIs**    | Handle async tasks like `setTimeout`, `fetch`, `fs` |
 | **Microtask Queue** | Stores Promises & `async/await`                     |
 | **Macrotask Queue** | Stores timers & event callbacks                     |
