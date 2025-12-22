@@ -30,7 +30,7 @@ JavaScript **modules** help you organize code by splitting it into **multiple fi
 </html>
 ```
 
-### Main.js
+### main.js
 
 ```
 import { add } from "./math.js";
@@ -39,7 +39,7 @@ console.log("Result:", add(2, 3));
 
 ```
 
-### Math.js
+### math.js
 
 ```
 export const add = (a, b) => a + b;
