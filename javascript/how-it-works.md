@@ -1,4 +1,4 @@
-# JavaScript – How It Works
+# How It Works
 
 This document explains **how JavaScript executes code** in the **browser** and **Node.js**, and how the **Event Loop** manages asynchronous operations in a **single-threaded** environment.
 
