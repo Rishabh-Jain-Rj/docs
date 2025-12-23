@@ -1,10 +1,10 @@
-# `var`, `let` & `const`
+# 📌 var, let & const
 
 This document explains **`var`, `let`, and `const`**
 
 ---
 
-## 🔹 `var`
+## 🔹 var
 
 - Function scoped
 - Hoisted and initialized with `undefined`
@@ -69,7 +69,7 @@ ReferenceError: Cannot access 'a' before initialization
 
 </details>
 
-### Question 2 – Loop Scope Trap (`var` vs `let`)
+### Question 2 – Loop Scope Trap (var vs let)
 
 ```js
 for (var i = 0; i < 3; i++) {

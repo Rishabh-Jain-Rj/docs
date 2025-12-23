@@ -1,4 +1,4 @@
-# Promises
+# 📌 Promises
 
 A **Promise** is an object that represents a value that will be available **in the future** — either **successfully (resolved)** or **with an error (rejected)**.
 

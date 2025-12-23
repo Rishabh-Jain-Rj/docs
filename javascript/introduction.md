@@ -1,4 +1,4 @@
-# Introduction
+# 📌 Introduction
 
 JavaScript is a **single-threaded, synchronous** programming language that supports **asynchronous operations** through its runtime environment (Browser or Node.js).
 

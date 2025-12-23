@@ -1,4 +1,4 @@
-# 📌 `this` keyword ?
+# 📌 this keyword ?
 
 Refers to the **object that calls the function**.
 

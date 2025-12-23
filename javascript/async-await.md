@@ -1,4 +1,4 @@
-# Async / Await
+# 📌 Async / Await
 
 `async / await` is used to handle **asynchronous operations** (like API calls) in a **clean and readable way**, without blocking JavaScript.
 
