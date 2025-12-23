@@ -47,7 +47,6 @@ export const add = (a, b) => a + b;
 
 ## Important notes
 
-When you import **anything** from a module, the **entire module file is executed**,  
-not just the exported variable or function.
-
-👉 This means **if there is any `console.log` or other code inside the module file, it will also run and print**, even if you import only one variable or function.
+> When you import **anything** from a module, the **entire module file is executed**, not just the exported variable or function.
+> <br/><br/>
+> 👉 This means **if there is any `console.log` or other code inside the module file, it will also run and print**, even if you import only one variable or function.

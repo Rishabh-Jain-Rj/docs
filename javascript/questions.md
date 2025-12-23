@@ -49,6 +49,7 @@ console.log("5" - 4);
 
 </details>
 <br/>
+
 **Explanation:**
 
 - `"5" + 4` → String concatenation (results in `"54"`).
