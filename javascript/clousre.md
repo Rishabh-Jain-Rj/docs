@@ -23,19 +23,20 @@ function foo() {
   console.log(x);
 }
 
+x = 30;
+
 function bar() {
   let x = 20;
   foo();
 }
 
-x = 20;
 bar();
 ```
 
 <details> <summary> Show Output</summary>
 
 ```
-20
+30
 ```
 
 **Explanation**

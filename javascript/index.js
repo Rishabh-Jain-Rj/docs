@@ -1,9 +1,14 @@
-const user = {
-  name: "Rishabh",
-  greet() {
-    console.log(this.name);
-  },
-};
+let x = 10;
 
-const fn = user.greet;
-fn();
+function foo() {
+  console.log(x);
+}
+
+x = 30;
+
+function bar() {
+  let x = 20;
+  foo();
+}
+
+bar();
