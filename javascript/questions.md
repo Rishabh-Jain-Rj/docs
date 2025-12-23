@@ -17,11 +17,13 @@ var x = 10;
 foo();
 ```
 
-### Output
+<details> <summary> Show Output</summary>
 
 ```
 undefined
 ```
+
+</details> <br/>
 
 **Explanation:**
 
@@ -38,13 +40,15 @@ console.log("5" + 4);
 console.log("5" - 4);
 ```
 
-### Output
+<details> <summary> Show Output</summary>
 
 ```
 54
 1
 ```
 
+</details>
+<br/>
 **Explanation:**
 
 - `"5" + 4` → String concatenation (results in `"54"`).
@@ -58,11 +62,13 @@ console.log("5" - 4);
 console.log(typeof NaN);
 ```
 
-### Output
+<details> <summary> Show Output</summary>
 
 ```
 number
 ```
+
+</details> <br/>
 
 **Explanation:**  
 `NaN` means _Not‑a‑Number_, but by JavaScript’s design, its type is still `"number"`.
@@ -75,11 +81,13 @@ number
 console.log(NaN === NaN);
 ```
 
-### Output
+<details> <summary> Show Output</summary>
 
 ```
 false
 ```
+
+</details> <br/>
 
 **Explanation:**
 
@@ -97,12 +105,14 @@ console.log(b);
 var a = b = 5;
 ```
 
-### Output
+<details> <summary> Show Output</summary>
 
 ```
 undefined
 ReferenceError: b is not defined (in strict mode)
 ```
+
+</details> <br/>
 
 **Explanation:**
 

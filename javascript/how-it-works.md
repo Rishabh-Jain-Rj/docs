@@ -109,7 +109,7 @@ setTimeout(() => {
 console.log("B");
 ```
 
-## Final Output
+<details> <summary> Show Output</summary>
 
 ```
 A
@@ -143,3 +143,5 @@ Macrotask (1st) → T1
 ---
 
 Macrotask (2nd) → T2
+
+</details>
