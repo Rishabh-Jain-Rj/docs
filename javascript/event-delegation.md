@@ -1,7 +1,6 @@
 # 📌 Event Delegation
 
-**Event Delegation** is a technique where a **single event listener** is added to a **parent element**  
-to handle events triggered by its **child elements** using **event bubbling**.
+**Event Delegation** is a technique where a **single event listener** is added to a **parent element** to handle events triggered by its **child elements** using **event bubbling**.
 
 ---
 

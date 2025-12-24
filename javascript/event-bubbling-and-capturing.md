@@ -1,4 +1,4 @@
-# Event Bubbling & Event Capturing
+# 📌 Event Bubbling & Event Capturing
 
 When an event (like `click`) happens, it **propagates through the DOM** in phases.
 
