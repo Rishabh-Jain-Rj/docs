@@ -4,3 +4,7 @@
   - event bubbling & capturing
   - Event Delegation
   - shallow copy vs deep copy
+- `26 Dec 2025`
+  - call, apply & bind
+  - polyfill
+  - currying

@@ -1,7 +1,6 @@
 # 📌 What is a Hoisting?
 
-Hoisting is JavaScript's behavior of registering declarations in memory before executing the code.  
-Only **declarations** are hoisted, not initializations.
+Hoisting is JavaScript's behavior of registering declarations in memory before executing the code. Only **declarations** are hoisted, not initializations.
 
 - `var` is hoisted and initialized with `undefined`
 - `let` / `const` are hoisted but stay in the Temporal Dead Zone (TDZ) until initialization
