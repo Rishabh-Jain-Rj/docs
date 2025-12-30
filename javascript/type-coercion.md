@@ -1,4 +1,4 @@
-# Type Coercion
+# 📌 Type Coercion
 
 Type coercion is when **JavaScript automatically changes a value’s type** so an operation can be performed.
 
