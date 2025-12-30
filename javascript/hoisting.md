@@ -21,6 +21,33 @@ console.log(b); //ReferenceError: Cannot access 'b' before initialization
 let b = 20;
 ```
 
+### Question
+
+```
+var x = 20;
+
+const foo = () => {
+console.log(x);
+var x = 10;
+};
+
+foo();
+```
+
+<details> <summary> Show Output</summary>
+
+```
+undefined
+```
+
+**Explanation:**
+
+- `var x` is **hoisted** inside the function but only the **declaration** (not the value).
+- It’s initialized as `undefined`, so `console.log(x)` logs `undefined`.
+- The **global `x = 20`** is not accessed because function scope takes priority.
+
+ </details>
+
 ## 🔹Function Hoisting in JavaScript
 
 JavaScript handles hoisting differently for **function declarations** and **function expressions (including arrow functions)**.

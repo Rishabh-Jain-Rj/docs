@@ -4,7 +4,7 @@ A collection of **common tricky JavaScript questions** that test your understand
 
 ---
 
-## 🧠 Question 1 – Hoisting Inside a Function
+## 🧠 Question 1
 
 ```
 var x = 20;
@@ -31,7 +31,7 @@ undefined
 
 ## </details>
 
-## 🔢 Question 2 – String and Number Conversion
+## 🔢 Question 2
 
 ```
 console.log("5" + 4);
@@ -52,7 +52,7 @@ console.log("5" - 4);
 
 </details>
 
-## 🧮 Question 3 – typeof NaN
+## 🧮 Question 3
 
 ```
 console.log(typeof NaN);
@@ -70,7 +70,7 @@ number
 
 </details>
 
-## ⚖️ Question 4 – NaN Equality Check
+## ⚖️ Question 4
 
 ```
 console.log(NaN === NaN);
@@ -90,7 +90,7 @@ false
 
 </details>
 
-## 🧱 Question 5 – Hoisting and Implicit Globals
+## 🧱 Question 5
 
 ```
 console.log(a);
@@ -113,17 +113,30 @@ ReferenceError: b is not defined (in strict mode)
 
 </details>
 
-## 📘 Quick Concepts Recap
+## 🧱 Question 6
 
-| Concept             | Description                                         |
-| ------------------- | --------------------------------------------------- |
-| **Hoisting**        | Declarations are moved to the top before execution. |
-| **`var`**           | Function-scoped and hoisted with `undefined`.       |
-| **`let` / `const`** | Block-scoped; not hoisted (temporal dead zone).     |
-| **`NaN`**           | Type is `"number"`, not equal to itself.            |
-| **Type Coercion**   | `"5" + 2` → `"52"`, `"5" - 2` → `3`.                |
+```
+console.log([] == ![]);
+```
 
----
+<details> <summary> Show Output</summary>
+
+```
+true
+```
+
+**Explanation:**
+
+- `[]` is an object, and all objects in JavaScript are **truthy**.
+- `![]` converts the truthy value to `false`.
+- The comparison becomes `[] == false`.
+- With `==`, JavaScript performs **type coercion**.
+- `false` is converted to the number `0`.
+- `[]` is converted to an empty string `""`.
+- The empty string `""` is converted to the number `0`.
+- Finally, `0 == 0` evaluates to `true`.
+
+</details>
 
 ## 💡 One‑Liner Summary
 
