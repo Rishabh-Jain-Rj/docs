@@ -44,19 +44,11 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 ""
 ```
 
-### 🧩 Explanation
+**🧩 Explanation**
 
 - `+` is the **binary plus operator**.
 - Binary `+` prefers **string concatenation** when operands aren’t pure numbers.
-- Arrays are converted to strings via their `.toString()` method.
-
-**Conversion flow:**
-
-```
-[] → ""
-[] → ""
-"" + "" → ""
-```
+- Arrays are first converted to **empty strings (`""`)**, so `[] + []` results in `""`.
 
 </details>
 
@@ -73,20 +65,12 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 "[object Object]"
 ```
 
-### 🧩 Explanation
+**🧩 Explanation**
 
 - `+` is again the **binary plus operator**.
 - `[]` converts to an empty string.
 - `{}` converts to `"[object Object]"`.
 - JavaScript concatenates them as strings.
-
-**Conversion flow:**
-
-```
-[] → ""
-{} → "[object Object]"
-"" + "[object Object]" → "[object Object]"
-```
 
 </details>
 
@@ -103,7 +87,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 0
 ```
 
-### 🧩 Explanation
+**🧩 Explanation**
 
 - At the start of a statement, `{}` is parsed as an **empty code block**, not an object literal.
 - What actually runs is: `+[]`
@@ -125,7 +109,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 NaN
 ```
 
-### 🧩 Explanation
+**🧩 Explanation**
 
 - Unary `+` forces number conversion
 - `{}` cannot become a number
@@ -146,10 +130,10 @@ null == undefined
 true
 ```
 
-### 🧩 Explanation
+**🧩 Explanation**
 
-- `==` allows type coercion
-- JavaScript treats them as equal
-- Only equal to each other
+- JavaScript has a **special case** for `null` and `undefined`
+- They are considered equal **only to each other**
+- They are **not** equal to any other value
 
 </details>
