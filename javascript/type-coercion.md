@@ -38,7 +38,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 ```
 
 <details>
-<summary><strong>Show Output</strong></summary>
+<summary>Show Output</summary>
 
 ```
 ""
@@ -67,7 +67,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 ```
 
 <details>
-<summary><strong>Show Output</strong></summary>
+<summary>Show Output</summary>
 
 ```
 "[object Object]"
@@ -97,7 +97,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 ```
 
 <details>
-<summary><strong>Show Output</strong></summary>
+<summary>Show Output</summary>
 
 ```
 0
@@ -119,7 +119,7 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 ```
 
 <details>
-<summary><strong>Show Output</strong></summary>
+<summary>Show Output</summary>
 
 ```
 NaN
@@ -140,7 +140,7 @@ null == undefined
 ```
 
 <details>
-<summary><strong>Show Output</strong></summary>
+<summary>Show Output</summary>
 
 ```
 true
