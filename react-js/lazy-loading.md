@@ -1,4 +1,4 @@
-# Lazy Loading in React
+# 📌 Lazy Loading in React
 
 ## 📘 What is Lazy Loading?
 
