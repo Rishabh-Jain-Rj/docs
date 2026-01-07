@@ -4,7 +4,7 @@ A collection of **common tricky JavaScript questions** that test your understand
 
 ---
 
-## 🧠 Question 1
+## Question 1
 
 ```
 var x = 20;
@@ -31,7 +31,7 @@ undefined
 
 ## </details>
 
-## 🔢 Question 2
+## Question 2
 
 ```
 console.log("5" + 4);
@@ -52,7 +52,7 @@ console.log("5" - 4);
 
 </details>
 
-## 🧮 Question 3
+## Question 3
 
 ```
 console.log(typeof NaN);
@@ -70,7 +70,7 @@ number
 
 </details>
 
-## ⚖️ Question 4
+## Question 4
 
 ```
 console.log(NaN === NaN);
@@ -90,7 +90,7 @@ false
 
 </details>
 
-## 🧱 Question 5
+## Question 5
 
 ```
 console.log(a);
@@ -113,7 +113,7 @@ ReferenceError: b is not defined (in strict mode)
 
 </details>
 
-## 🧱 Question 6
+## Question 6
 
 ```
 console.log([] == ![]);
@@ -135,6 +135,46 @@ true
 - `[]` is converted to an empty string `""`.
 - The empty string `""` is converted to the number `0`.
 - Finally, `0 == 0` evaluates to `true`.
+
+</details>
+
+## Question 7
+
+```
+console.log(null + null);
+```
+
+<details> <summary> Show Output</summary>
+
+```
+0
+```
+
+**Explanation:**
+
+- `null` is converted to `0` in numeric operations
+- `0 + 0 = 0`
+
+</details>
+
+## Question 8
+
+```
+console.log(parseInt("10px"));
+```
+
+<details> <summary> Show Output</summary>
+
+```
+10
+```
+
+**Explanation:**
+
+- `parseInt` reads numbers from the **start of the string**
+- Stops parsing when it encounters a non-numeric character
+
+> if No numeric value at the start of the string, Parsing fails → returns `NaN`
 
 </details>
 
