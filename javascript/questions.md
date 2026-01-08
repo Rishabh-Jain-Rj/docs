@@ -311,6 +311,38 @@ var foo = function () {
 
 </details>
 
+## Question 13
+
+```js
+const obj = {
+  x: 10,
+  getX() {
+    return () => this.x;
+  },
+};
+
+const fn = obj.getX();
+console.log(fn.call({ x: 20 }));
+```
+
+<details>
+<summary>Show Output</summary>
+
+```
+10
+```
+
+**Explanation:**
+
+- `getX` is invoked as a method of `obj`, so `this` refers to `obj`.
+- Arrow functions do not have their own `this`.
+- The arrow function lexically captures `this` at creation time.
+- The captured `this` permanently points to `obj`.
+- Methods like `call`, `apply`, or `bind` cannot change `this` for arrow functions.
+- Therefore, the function always returns `obj.x`, which is `10`.
+
+</details>
+
 ## 💡 One‑Liner Summary
 
 > Most JavaScript “tricks” come from **hoisting**, **type coercion**, and **reference behavior** — master these, and no question will surprise you again 🚀
