@@ -80,3 +80,7 @@ var sayHello = function () {
 - It is initialized as `undefined`
 - The function body is assigned later
   > If `let` or `const` is used in place of var, accessing it before declaration throws a **ReferenceError** because the variable is in the **Temporal Dead Zone (TDZ)**
+
+### Important Note
+
+> Function declarations are hoisted completely and take priority, while `var` is hoisted only as `undefined`, so function hoisting always comes first.

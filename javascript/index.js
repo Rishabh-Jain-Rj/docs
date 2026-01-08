@@ -1,1 +1,5 @@
-console.log(parseInt("x10"));
+foo();
+
+const foo = () => {
+  console.log("1");
+};

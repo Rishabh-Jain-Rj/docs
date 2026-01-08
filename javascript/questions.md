@@ -178,6 +178,139 @@ console.log(parseInt("10px"));
 
 </details>
 
+## Question 9
+
+```
+const fun = () => {
+  try {
+    return 1;
+  } finally {
+    return 3;
+  }
+};
+
+console.log(fun());
+```
+
+<details> <summary> Show Output</summary>
+
+```
+3
+```
+
+**Explanation:**
+
+- `finally` always executes — even if `try` has a `return`.
+- If `finally` contains a **return**, it overrides any other `return`.
+
+</details>
+
+## Question 10
+
+```js
+const arr = [1, 2, 4];
+arr[10] = 9;
+
+console.log(arr.map(parseInt));
+```
+
+<details> <summary> Show Output</summary>
+
+```
+[
+  1,
+  NaN,
+  NaN,
+  <7 empty slots>,
+  9
+]
+```
+
+**Explanation:**
+
+- Assigning a value at a higher index (`arr[10] = 9`) creates a **sparse array** with empty slots in between.
+- `map` iterates only over existing elements and **skips empty slots**.
+- `map` passes multiple arguments to its callback, including the **index**.
+- `parseInt` interprets its second argument as the **radix** (number base), which number system the given value is written in.
+- Using `map(parseInt)` causes the array index to be treated as the radix.
+- Invalid radix values result in `NaN`, producing unexpected output.
+
+**Note (Radix / Number System):**
+
+- **Binary** → base 2 (uses digits 0 and 1) e.g. `parseInt(101, 2)` → `5`
+- **Octal** → base 8 (uses digits 0 to 7) e.g. `parseInt(10, 8)` → `8`
+- **Decimal** → base 10 (uses digits 0 to 9) e.g. `parseInt(10, 10)` → `10`
+- **Hexadecimal** → base 16 (uses digits 0 to 9 and A to F) e.g. `parseInt("A", 16)` → `10`
+
+**Best Practice:**
+
+- Always be explicit about the radix when converting strings to numbers.
+- Avoid passing `parseInt` directly as a callback to `map`.
+
+</details>
+
+## Question 11
+
+```
+const a = {};
+const b = { key: "b" };
+const c = { key: "c" };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+
+```
+
+<details> <summary> Show Output</summary>
+
+```
+456
+```
+
+**Explanation:**
+
+- Object keys in JavaScript are always **strings** (or symbols).
+- When an object is used as a key, it is **implicitly converted to a string**.
+- Both objects (`b` and `c`) are converted to the same string value: `[object Object]`.
+- Assigning `a[b]` and `a[c]` therefore refers to the **same property**.
+- The second assignment **overwrites** the first one.
+- The final value stored for that key is `456`, so accessing `a[b]` returns `456`.
+
+</details>
+
+## Question 12
+
+```js
+foo();
+
+function foo() {
+  console.log(1);
+}
+
+var foo = function () {
+  console.log(2);
+};
+```
+
+<details>
+<summary>Show Output</summary>
+
+```
+1
+```
+
+**Explanation:**
+
+- Both a function declaration and a `var` variable share the same name (`foo`).
+- Function declarations are **fully hoisted** and take **priority** during hoisting.
+- `var` is hoisted only as `undefined`, and its assignment happens later.
+- At the time `foo()` is called, `foo` still refers to the **function declaration**.
+- The `var` assignment overrides `foo` only after that line is executed.
+
+</details>
+
 ## 💡 One‑Liner Summary
 
 > Most JavaScript “tricks” come from **hoisting**, **type coercion**, and **reference behavior** — master these, and no question will surprise you again 🚀
