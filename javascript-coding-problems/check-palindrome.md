@@ -37,7 +37,7 @@ const checkPalindrome = (str) => {
 - If any character mismatch is found, the function returns `false`
 - If the loop completes without mismatch, the string is a palindrome
 
-## 🔄 Other Short Ways using inbuild methods
+## 🔄 Other Short Ways
 
 ### 1️⃣ Using Reverse Method
 
