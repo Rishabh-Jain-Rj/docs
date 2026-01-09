@@ -11,7 +11,7 @@ Promises are mainly used to handle **asynchronous operations**.
 A Promise can be in **one of three states**:
 
 - **Pending** → initial state
-- **Fulfilled** → operation completed successfully
+- **Resolved** → operation completed successfully
 - **Rejected** → operation failed
 
 ---

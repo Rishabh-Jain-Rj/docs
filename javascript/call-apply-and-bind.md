@@ -58,6 +58,10 @@ boundGreet.call(otherUser);
 
 <details> <summary>Show Output</summary>
 
+```
+Rishabh
+```
+
 ### Explanation
 
 - `bind()` creates a **new function** with `this` permanently bound to `user`
