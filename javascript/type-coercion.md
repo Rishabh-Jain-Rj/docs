@@ -74,29 +74,9 @@ Type coercion is when **JavaScript automatically changes a value’s type** so a
 
 </details>
 
-### Question 3
-
-```
-{} + []
-```
-
-<details>
-<summary>Show Output</summary>
-
-```
-0
-```
-
-**🧩 Explanation**
-
-- At the start of a statement, `{}` is parsed as an **empty code block**, not an object literal.
-- What actually runs is: `+[]`
-- The **unary plus (`+`)** converts the operand into a number.
-- An empty array becomes an empty string, which converts to `0`.
-
 </details>
 
-### Question 4
+### Question 3
 
 ```
 +{}
@@ -117,7 +97,7 @@ NaN
 
 </details>
 
-### Question 5
+### Question 4
 
 ```
 null == undefined
