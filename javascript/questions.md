@@ -29,7 +29,7 @@ undefined
 - It’s initialized as `undefined`, so `console.log(x)` logs `undefined`.
 - The **global `x = 20`** is not accessed because function scope takes priority.
 
-## </details>
+</details>
 
 ## Question 2
 
@@ -340,6 +340,36 @@ console.log(fn.call({ x: 20 }));
 - The captured `this` permanently points to `obj`.
 - Methods like `call`, `apply`, or `bind` cannot change `this` for arrow functions.
 - Therefore, the function always returns `obj.x`, which is `10`.
+
+</details>
+
+## Question 14
+
+```js
+const arr = [1, 2, 3, 4, 5];
+
+arr.length = 2;
+console.log(arr);
+
+arr.length = 5;
+console.log(arr);
+```
+
+<details>
+<summary>Show Output</summary>
+
+```
+[1, 2]
+[1, 2, <3 empty items>]
+```
+
+**Explanation:**
+
+- `arr` starts with 5 values.
+- Changing `length` can remove values.
+- Removed values are gone permanently.
+- Increasing `length` adds empty slots.
+- Old values do not come back.
 
 </details>
 

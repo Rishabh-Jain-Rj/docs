@@ -117,6 +117,23 @@ window.addEventListener("scroll", throttledScroll);
 
 As a result, the function executes **at a controlled rate** during continuous events.
 
+### Other implementation
+
+```js
+const throttle = (fn, delay) => {
+  let timer;
+
+  return (...args) => {
+    if (!timer) {
+      fn(...args);
+      timer = setTimeout(() => {
+        timer = null;
+      }, delay);
+    }
+  };
+};
+```
+
 ---
 
 ## Simple Difference
