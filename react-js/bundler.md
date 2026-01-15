@@ -1,4 +1,4 @@
-# 📌 What is a bundler?
+# ⚛️ What is a bundler?
 
 You write code like this:
 

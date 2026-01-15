@@ -1,4 +1,4 @@
-# 📌 Memory Leaks in JavaScript
+# 🟨 Memory Leaks in JavaScript
 
 JavaScript uses two main memory areas: **Stack** and **Heap**.
 

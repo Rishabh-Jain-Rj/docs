@@ -1,4 +1,4 @@
-# 📌 map(), filter(), reduce()
+# 🟨 map(), filter(), reduce()
 
 These are **array methods** used to work with data in a clean, functional way.  
 They **do not mutate** the original array.

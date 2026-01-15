@@ -1,4 +1,4 @@
-# 📌 JSX (JavaScript XML)
+# ⚛️ JSX (JavaScript XML)
 
 ### What is JSX?
 

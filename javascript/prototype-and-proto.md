@@ -1,4 +1,4 @@
-# 📌 Prototype and **proto** in JavaScript
+# 🟨 Prototype and **proto** in JavaScript
 
 ## Prototype
 

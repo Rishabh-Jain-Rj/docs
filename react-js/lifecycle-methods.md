@@ -1,4 +1,4 @@
-# React Lifecycle Methods
+# ⚛️ React Lifecycle Methods
 
 Lifecycle methods define the different stages a component goes through from appearing on the screen to being removed.
 

@@ -1,4 +1,4 @@
-# 📌 What is a Closure?
+# 🟨 What is a Closure?
 
 A **closure** is created when a function remembers variables from its lexical scope
 and can access them later, even after the outer function has finished executing.

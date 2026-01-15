@@ -1,4 +1,4 @@
-# 📌 Memoization
+# 🟨 Memoization
 
 Memoization is a way to **store a function’s output** and **reuse it** when the same input comes again.
 

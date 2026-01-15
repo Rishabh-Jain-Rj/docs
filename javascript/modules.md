@@ -1,4 +1,4 @@
-# 📌 JavaScript Modules (ES Modules)
+# 🟨 JavaScript Modules (ES Modules)
 
 JavaScript **modules** help you organize code by splitting it into **multiple files**. Each file has its **own scope** and can share code using `export` and `import`.
 

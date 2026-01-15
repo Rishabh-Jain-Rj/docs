@@ -1,4 +1,4 @@
-# 📌 What is Currying?
+# 🟨 What is Currying?
 
 **Currying** is a technique where a function **takes one argument at a time**  
 and **returns another function** until all arguments are received.

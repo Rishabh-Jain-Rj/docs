@@ -1,4 +1,4 @@
-# 📌 Virtual DOM & Reconciliation
+# ⚛️ Virtual DOM & Reconciliation
 
 ## Virtual DOM
 

@@ -1,4 +1,4 @@
-# 📌 Operator Precedence in JavaScript
+# 🟨 Operator Precedence in JavaScript
 
 JavaScript evaluates expressions based on **operator precedence** (similar to BODMAS), along with **associativity**.
 

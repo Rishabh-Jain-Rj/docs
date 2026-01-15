@@ -1,4 +1,4 @@
-# 📌 Garbage Collector
+# 🟨 Garbage Collector
 
 The garbage collector automatically frees memory by removing objects that are **no longer reachable**.
 

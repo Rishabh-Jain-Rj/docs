@@ -1,4 +1,4 @@
-# Redux & Redux Toolkit – Simple Guide
+# ⚛️ Redux & Redux Toolkit – Simple Guide
 
 ## 🧠 What is Redux?
 

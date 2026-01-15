@@ -1,4 +1,4 @@
-# 📌 Data Types
+# 🟨 Data Types
 
 JavaScript data types define **what kind of value** a variable can hold. They are divided into two main categories:
 

@@ -1,4 +1,4 @@
-# 📌 Memoization in React (React.memo, useCallback & useMemo)
+# ⚛️ Memoization in React (React.memo, useCallback & useMemo)
 
 Memoization helps React **avoid unnecessary work** during re-renders.
 

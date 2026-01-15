@@ -1,4 +1,4 @@
-# 📌 var, let & const
+# 🟨 var, let & const
 
 This document explains **`var`, `let`, and `const`**
 

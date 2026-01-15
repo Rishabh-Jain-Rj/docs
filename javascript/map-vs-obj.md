@@ -1,4 +1,4 @@
-# 📌 Map vs Object in JavaScript
+# 🟨 Map vs Object in JavaScript
 
 Both **Map** and **Object** store data as **key–value pairs**, but they are designed for **different use cases**.
 

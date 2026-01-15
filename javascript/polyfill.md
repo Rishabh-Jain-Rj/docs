@@ -1,4 +1,4 @@
-# 📌 Polyfill
+# 🟨 Polyfill
 
 A **polyfill** is extra JavaScript code written for **older browsers** so they can **support features available in modern browsers**.
 

@@ -1,4 +1,4 @@
-# 📌 call, apply & bind — Quick Notes
+# 🟨 call, apply & bind — Quick Notes
 
 `call`, `apply`, and `bind` are used to **control the value of `this`** inside a function.
 

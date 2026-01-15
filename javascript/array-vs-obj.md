@@ -1,4 +1,4 @@
-# 📌 Array vs Object in JavaScript
+# 🟨 Array vs Object in JavaScript
 
 ## Array
 

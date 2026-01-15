@@ -1,4 +1,4 @@
-# 📌Debouncing & Throttling
+# 🟨 Debouncing & Throttling
 
 When users interact with the UI (typing, scrolling, resizing), some events fire **many times very quickly**. Calling a function every time can hurt performance.
 

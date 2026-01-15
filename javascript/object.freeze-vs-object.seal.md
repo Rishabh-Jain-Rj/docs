@@ -1,4 +1,4 @@
-# 📌 Object.freeze() vs Object.seal() in JavaScript
+# 🟨 Object.freeze() vs Object.seal() in JavaScript
 
 Both methods are used to **restrict changes to objects**, but they differ in how much mutation they allow.
 

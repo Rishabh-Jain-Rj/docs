@@ -1,4 +1,4 @@
-# 📌 Tricky Questions & Explanations
+# 🟨 Tricky Questions & Explanations
 
 A collection of **common tricky JavaScript questions** that test your understanding of **hoisting, scope, type coercion, and reference concepts**.
 
