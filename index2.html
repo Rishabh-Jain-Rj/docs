@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Child Page - Unsafe</title>
+  </head>
+  <body>
+    <h1>Child Page (Unsafe)</h1>
+    <p>This page will try to control the parent page.</p>
+
+    <script>
+      // This will redirect the parent page after 3 seconds
+      setTimeout(() => {
+        console.log(window?.opener);
+        if (window.opener) {
+          window.opener.location.href = "https://example.com";
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

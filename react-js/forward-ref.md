@@ -10,7 +10,7 @@ By default, refs **do not work with custom functional components**. `forwardRef`
 
 ---
 
-### Why Forward Ref Is Needed
+### Why forwardRef Is Needed
 
 - Refs normally work only with **DOM elements**.
 - When you create a **custom component**, the ref stops at that component.
@@ -21,7 +21,7 @@ By default, refs **do not work with custom functional components**. `forwardRef`
 
 ---
 
-### Example Without `forwardRef` (❌ Won’t Work)
+### Example Without forwardRef (❌ Won’t Work)
 
 ```js
 function Input(props) {
@@ -32,7 +32,7 @@ const inputRef = useRef(null);
 <Input ref={inputRef} />; // ref will be null
 ```
 
-### Example With `forwardRef` (✅ Works)
+### Example With forwardRef (✅ Works)
 
 ```js
 import React, { forwardRef, useRef } from "react";
@@ -53,7 +53,7 @@ function App() {
 }
 ```
 
-## When to Use `forwardRef`
+## When to Use forwardRef
 
 - Focusing an input from a parent component
 - Scrolling to a specific element

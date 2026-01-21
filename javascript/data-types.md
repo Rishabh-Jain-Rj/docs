@@ -11,7 +11,25 @@ JavaScript data types define **what kind of value** a variable can hold. They ar
 
 Primitive data types are **simple and immutable** — their values are compared **by value**, not by reference.
 
-JavaScript has **7 primitive types**:
+### What “Immutable” Means
+
+- You cannot modify the original value
+- Any operation creates a **new value**
+- Variables can be reassigned, but values stay unchanged
+
+### Example
+
+```js
+let name = "Ram";
+name = "Shyam"; // creates a new value
+
+let text = "Hi";
+text[0] = "B"; // ❌ no change because primitive values are immutable
+
+console.log(text); // "Hi"
+```
+
+### JavaScript has **7 primitive types**:
 
 | No. | Type          | Description                                     | Example                  |
 | --- | ------------- | ----------------------------------------------- | ------------------------ |
@@ -23,8 +41,6 @@ JavaScript has **7 primitive types**:
 | 6️⃣  | **Null**      | Intentional empty value                         | `let data = null;`       |
 | 7️⃣  | **Symbol**    | Unique and immutable identifiers                | `let id = Symbol("id");` |
 
----
-
 ### 🧠 Things to Remember
 
 - Primitives are **immutable**
@@ -33,14 +49,14 @@ JavaScript has **7 primitive types**:
 - `typeof NaN` → `"number"`
 - BigInt and Number **cannot mix directly**
 - Symbols create **unique object keys**
-- Shortcut to remember → **SSNNBBU**  
+- Shortcut to remember → **SSNNBBU**
   **S**ymbol, **S**tring, **N**umber, **N**ull, **B**igInt, **B**oolean, **U**ndefined
 
 ---
 
 ## 🧩 Non‑Primitive (Reference) Data Types
 
-Non‑primitive data types are **objects** in JavaScript.  
+Non‑primitive data types are **objects** in JavaScript.
 They store **references** to memory locations instead of direct values.
 
 When copying or assigning them, you copy the **reference**, not the data — meaning changes affect all references to that object.
