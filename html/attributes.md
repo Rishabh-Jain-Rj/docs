@@ -2,8 +2,7 @@
 
 **Attributes** provide **extra information** about an HTML element.
 
-They are written inside the **opening tag** and usually come as  
-`name="value"`.
+They are written inside the **opening tag** and usually come as `name="value"`.
 
 ---
 

@@ -72,3 +72,30 @@ When a link opens in a new tab using `target="_blank"`, the new page can access 
 This improves security and protects the original page.
 
 </details>
+
+## Question 4
+
+Why do we use the `alt` attribute in the `<img>` tag?
+
+<details>
+  <summary><strong>Show Answer</strong></summary>
+
+- Shows text if the image does not load
+- Helps screen readers describe the image to blind users
+- Improves accessibility
+- Helps search engines understand the image
+
+</details>
+
+## Question 5
+
+Will creating a custom HTML tag like `<rishabh>` throw an error? If not, how does it behave?
+
+<details>
+  <summary><strong>Show Answer</strong></summary>
+
+- It will NOT throw any error
+- Browsers allow unknown HTML tags
+- Unknown tags behave like inline elements by default
+
+</details>

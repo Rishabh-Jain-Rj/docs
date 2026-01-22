@@ -1,22 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Parent Page</title>
+    <meta charset="UTF-8" />
+    <title>CSS Cascading Priority Demo</title>
+
+    <style>
+      /* .important {
+        color: red !important;
+      } */
+
+      /* #para {
+        color: orange;
+      } */
+
+      /* 4️⃣ Class selector */
+      .text {
+        color: green;
+      }
+      p {
+        color: blue;
+      }
+
+      /* 3️⃣ ID selector */
+    </style>
   </head>
   <body>
-    <h1>Parent Page</h1>
-    <p>This page represents your main website.</p>
-
-    <!-- Unsafe link -->
-    <a href="https://rishabh-jain-rj.github.io/html-rj/" target="_blank">
-      Open Child Page (Unsafe)
-    </a>
-
-    <br /><br />
-
-    <!-- Safe link -->
-    <a href="child-safe.html" target="_blank" rel="noopener noreferrer">
-      Open Child Page (Safe)
-    </a>
+    <p id="para" class="text important">Which color am I?</p>
   </body>
 </html>

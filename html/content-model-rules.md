@@ -9,20 +9,21 @@ HTML **content model rules** define:
 
 ## HTML Content Model Rules
 
-| Element         | Rule                                    | Valid / Invalid Example         |
-| --------------- | --------------------------------------- | ------------------------------- |
-| `<p>`           | Cannot contain block-level elements     | ❌ `<p><div></div></p>`         |
-| `<a>`           | Can wrap block elements in HTML5        | ✔ `<a><div></div></a>`          |
-| `<a>`           | Cannot contain another `<a>`            | ❌ `<a><a></a></a>`             |
-| `<ul>`, `<ol>`  | Can contain only `<li>`                 | ❌ `<ul><div></div></ul>`       |
-| `<li>`          | Must be inside `<ul>` or `<ol>`         | ❌ `<li></li>` alone            |
-| `<table>`       | Has strict structure (`tr`, `td`, `th`) | ❌ `<table><div></div></table>` |
-| `<form>`        | Cannot be nested                        | ❌ `<form><form></form></form>` |
-| `<main>`        | Only one per page                       | ❌ Multiple `<main>`            |
-| `<main>`        | Cannot be inside sectioning content     | ❌ Inside `<article>`           |
-| Inline elements | Should not contain block elements       | ❌ `<span><div></div></span>`   |
-| Block elements  | Can contain inline elements             | ✔ `<div><span></span></div>`    |
-| Headings        | Should follow order (`h1 → h6`)         | ⚠ Skipping levels               |
+| Element         | Rule                                    | Valid / Invalid Example                                    |
+| --------------- | --------------------------------------- | ---------------------------------------------------------- |
+| `<p>`           | Cannot contain block-level elements     | ❌ `<p><div></div></p>`                                    |
+| `<a>`           | Can wrap block elements in HTML5        | ✔ `<a><div></div></a>`                                     |
+| `<a>`           | Cannot contain another `<a>`            | ❌ `<a><a></a></a>`                                        |
+| `<ul>`, `<ol>`  | Can contain only `<li>`                 | ❌ `<ul><div></div></ul>`                                  |
+| `<li>`          | Must be inside `<ul>` or `<ol>`         | ❌ `<li></li>` alone                                       |
+| `<table>`       | Has strict structure (`tr`, `td`, `th`) | ❌ `<table><div></div></table>`                            |
+| `<form>`        | Cannot be nested                        | ❌ `<form><form></form></form>`                            |
+| `<main>`        | Only one per page                       | ❌ Multiple `<main>`                                       |
+| `<main>`        | Cannot be inside sectioning content     | ❌ Inside `<article>`                                      |
+| Inline elements | Should not contain block elements       | ❌ `<span><div></div></span>`                              |
+| Block elements  | Can contain inline elements             | ✔ `<div><span></span></div>`                               |
+| Headings        | Should follow order (`h1 → h6`)         | ⚠ Skipping heading levels (for example, h1 directly to h3) |
+|  |
 
 ## Invalid HTML vs Browser Correction
 

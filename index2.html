@@ -1,20 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Child Page - Unsafe</title>
+    <meta charset="UTF-8" />
+    <title>HTML5 Test</title>
+    <style>
+      .box {
+        width: 200px;
+        padding: 20px;
+        border: 10px solid red;
+        background: lightblue;
+        box-sizing: content-box;
+      }
+    </style>
   </head>
   <body>
-    <h1>Child Page (Unsafe)</h1>
-    <p>This page will try to control the parent page.</p>
+    <h2>HTML5 DOCTYPE</h2>
 
-    <script>
-      // This will redirect the parent page after 3 seconds
-      setTimeout(() => {
-        console.log(window?.opener);
-        if (window.opener) {
-          window.opener.location.href = "https://example.com";
-        }
-      }, 3000);
-    </script>
+    <div class="box">Box Model Test</div>
+
+    <br />
+
+    <input type="date" />
+    <p>Date input works here too</p>
   </body>
 </html>
