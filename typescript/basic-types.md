@@ -75,7 +75,13 @@ Similar to any but safer. Requires type checking before usage.
 
 ```ts
 let value: unknown = "Hello";
+
+if (typeof value === "string") {
+  console.log(value.toUpperCase()); // ✅ Safe to use as string
+}
 ```
+
+> 💡 `unknown` forces you to check the type before using the value, which helps prevent runtime errors.
 
 ### 🔹 Void
 

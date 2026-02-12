@@ -59,14 +59,16 @@ TypeScript (.ts / .tsx)
 
 ## 🛠 TypeScript Common Commands
 
-| Command                             | Purpose                                             |
-| ----------------------------------- | --------------------------------------------------- |
-| `npm install typescript --save-dev` | Installs TypeScript in the project                  |
-| `tsc --init`                        | Creates `tsconfig.json` configuration file          |
-| `tsc filename.ts`                   | Compiles a specific TypeScript file into JavaScript |
-| `tsc`                               | Compiles the entire project using `tsconfig.json`   |
-| `tsc --watch`                       | Automatically compiles files on save                |
-| `tsc -v`                            | Shows installed TypeScript version                  |
+| Command                             | Purpose                                                          |
+| ----------------------------------- | ---------------------------------------------------------------- |
+| `npm install typescript --save-dev` | Installs TypeScript in the project                               |
+| `tsc --init`                        | Creates `tsconfig.json` configuration file                       |
+| `tsc filename.ts`                   | Compiles a specific TypeScript file into JavaScript              |
+| `tsc`                               | Compiles the entire project using `tsconfig.json`                |
+| `tsc --watch filename.ts`           | Automatically compiles a specific file whenever you save changes |
+| `tsc --watch`                       | Automatically compiles the entire project using `tsconfig.json`  |
+
+| `tsc -v` | Shows installed TypeScript version |
 
 ## 📂 File Extensions
 
