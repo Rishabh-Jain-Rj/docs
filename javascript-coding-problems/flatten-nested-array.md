@@ -56,6 +56,7 @@ console.log(flattenArray([1, [2, 3], [4, [5, 6, 2]], 3]));
 ### Explanation
 
 - `flat(Infinity)` converts the nested array into a single flat array.
+- `Infinity` means flatten the array completely, no matter how many levels of nesting are present.
 - `Set` automatically removes duplicate values.
 - The spread operator `...` converts the `Set` back into a normal array.
 </details>
