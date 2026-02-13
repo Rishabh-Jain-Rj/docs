@@ -14,10 +14,12 @@ This improves:
 
 ## 🚀 Why Use Lazy Loading?
 
-- Faster initial page load
-- Reduced JavaScript bundle size
-- Better performance for large apps
-- Perfect for routing and heavy components
+- Loads the app faster on first visit
+- Doesn’t download everything at once
+- Only loads heavy components when actually needed
+- Keeps the main bundle small
+- Browser has less JavaScript to parse at the start
+- Extra files are downloaded only when the user opens that part
 
 ---
 
@@ -36,3 +38,58 @@ function App() {
   );
 }
 ```
+
+## 🔄 Application Flow
+
+#### ❌ Without Lazy Loading
+
+```
+User Opens Website
+        ↓
+Browser Requests Server
+        ↓
+Server Sends Full JS Bundle
+(All Components Included)
+        ↓
+Browser Downloads Entire Bundle
+        ↓
+React Renders UI
+        ↓
+User Navigates Between Pages
+(No Additional Downloads)
+```
+
+👉 Problem:
+
+- Large initial load time
+- Unnecessary components loaded
+
+#### ✅ With Lazy Loading
+
+```
+User Opens Website
+        ↓
+Browser Requests Server
+        ↓
+Server Sends Core Bundle Only
+        ↓
+React Starts Rendering
+        ↓
+User Navigates To Lazy Component
+        ↓
+Dynamic Import Triggered
+        ↓
+Browser Downloads Component Chunk
+        ↓
+Suspense Shows Loader
+        ↓
+Component Loads & Renders
+```
+
+**Internal Working**
+
+- `Lazy Import` → Creates Separate Chunk
+- `Navigation` → Triggers Network Request
+- `Chunk Loaded` → React Renders Component
+
+---

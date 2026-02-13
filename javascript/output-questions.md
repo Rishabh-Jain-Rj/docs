@@ -17,7 +17,7 @@ var x = 10;
 foo();
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 undefined
@@ -38,7 +38,7 @@ console.log("5" + 4);
 console.log("5" - 4);
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 54
@@ -58,7 +58,7 @@ console.log("5" - 4);
 console.log(typeof NaN);
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 number
@@ -76,7 +76,7 @@ number
 console.log(NaN === NaN);
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 false
@@ -98,7 +98,7 @@ console.log(b);
 var a = b = 5;
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 undefined
@@ -119,7 +119,7 @@ ReferenceError: b is not defined (in strict mode)
 console.log([] == ![]);
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 true
@@ -144,7 +144,7 @@ true
 console.log(null + null);
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 0
@@ -163,7 +163,7 @@ console.log(null + null);
 console.log(parseInt("10px"));
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 10
@@ -192,7 +192,7 @@ const fun = () => {
 console.log(fun());
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 3
@@ -214,7 +214,7 @@ arr[10] = 9;
 console.log(arr.map(parseInt));
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 [
@@ -263,7 +263,7 @@ console.log(a[b]);
 
 ```
 
-<details> <summary> Show Output</summary>
+<details> <summary> Show Answer</summary>
 
 ```
 456
@@ -295,7 +295,7 @@ var foo = function () {
 ```
 
 <details>
-<summary>Show Output</summary>
+<summary>Show Answer</summary>
 
 ```
 1
@@ -326,7 +326,7 @@ console.log(fn.call({ x: 20 }));
 ```
 
 <details>
-<summary>Show Output</summary>
+<summary>Show Answer</summary>
 
 ```
 10
@@ -356,7 +356,7 @@ console.log(arr);
 ```
 
 <details>
-<summary>Show Output</summary>
+<summary>Show Answer</summary>
 
 ```
 [1, 2]
@@ -370,6 +370,101 @@ console.log(arr);
 - Removed values are gone permanently.
 - Increasing `length` adds empty slots.
 - Old values do not come back.
+
+</details>
+
+## Question 15
+
+```js
+console.log(1 + -"1" + "2");
+```
+
+<details>
+<summary>Show Answer</summary>
+
+```
+"02"
+```
+
+**Explanation:**
+
+- `-"1"` converts the string `"1"` into number `-1`.
+- `1 + (-1)` becomes `0`.
+- `0 + "2"` results in string concatenation.
+- When a number is added to a string using `+`, JavaScript converts the number into a string.
+
+Final result becomes `"02"`.
+
+</details>
+
+## Question 16
+
+```js
+console.log("A" - "B" + 2);
+```
+
+<details>
+<summary>Show Answer</summary>
+
+```
+NaN
+```
+
+**Explanation:**
+
+- `"A" - "B"` forces numeric conversion, but both values cannot be converted into numbers.
+- So JavaScript converts them into `NaN`.
+- `NaN + 2` still results in `NaN`.
+
+Final result becomes `NaN`.
+
+</details>
+
+## Question 17
+
+```js
+console.log("A" - "B" + "2");
+```
+
+<details>
+<summary>Show Answer</summary>
+
+```
+"NaN2"
+```
+
+**Explanation:**
+
+- `"A" - "B"` forces numeric conversion, but both values cannot be converted into numbers.
+- So JavaScript converts them into `NaN`.
+- `NaN + "2"` results in string concatenation.
+- When a number is added to a string using `+`, JavaScript converts the number into a string.
+
+Final result becomes `"NaN2"`.
+
+</details>
+
+## Question 18
+
+```js
+console.log([1, 3, 5] + [2, 4, 5]);
+```
+
+<details>
+<summary>Show Answer</summary>
+
+```
+"1,3,52,4,5"
+```
+
+**Explanation:**
+
+- When arrays are used with `+`, JavaScript converts them into strings.
+- `[1,3,5]` becomes `"1,3,5"`.
+- `[2,4,5]` becomes `"2,4,5"`.
+- Adding two strings results in concatenation.
+
+Final result becomes `"1,3,52,4,5"`.
 
 </details>
 

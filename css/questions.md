@@ -19,3 +19,21 @@ The CSS Box Model defines the layout of elements as rectangular boxes consisting
 **Order:** `Content → Padding → Border → Margin`
 
 </details>
+
+---
+
+## Question 2
+
+What is the difference between **Flexbox** and **Grid** in CSS?
+
+<details>
+  <summary><strong>Show Answer</strong></summary>
+
+| Feature       | Flexbox                                 | Grid                                    |
+| ------------- | --------------------------------------- | --------------------------------------- |
+| Layout Type   | One-dimensional (row OR column)         | Two-dimensional (row AND column)        |
+| Best Used For | Aligning items in a single direction    | Creating full page or complex layouts   |
+| Control       | Controls alignment and spacing of items | Controls layout structure and placement |
+| Complexity    | Simple and flexible                     | More powerful but slightly complex      |
+
+</details>

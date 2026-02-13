@@ -27,7 +27,9 @@ We can return multiple elements by returning them as an **array of elements**.
 - React treats the array as a valid return value.
 - It is less commonly used but valid.
 
-</details>
+## </details>
+
+---
 
 ## Question 2
 
@@ -75,3 +77,75 @@ setCount((prev) => prev + 1);
 ```
 
 </details>
+
+---
+
+## Question 3
+
+What is the difference between **Browser Storage options** (`localStorage`, `sessionStorage`, and `cookies`)?
+
+<details>
+<summary>Show Answer</summary>
+
+### 📊 Difference
+
+| Feature                            | localStorage                                                       | sessionStorage                                              | Cookies                                                                             |
+| ---------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **How long data stays**            | Stays forever unless user clears browser or you remove it manually | Stays only until that tab is open                           | You decide expiry time (minutes, days, etc.)                                        |
+| **Works across tabs?**             | Yes, all tabs of same website can use it                           | No, each tab gets its own storage                           | Yes, works across tabs                                                              |
+| **Storage size**                   | Stores large data (about 5MB total per website)                    | Stores large data (about 5MB per tab)                       | Stores very small data (about 4KB per cookie and limited total cookies per website) |
+| **Sent to backend automatically?** | No                                                                 | No                                                          | Yes, cookies go with every request                                                  |
+| **Where it is mostly used**        | Saving theme, user preferences, UI settings                        | Temporary things like form steps, OTP flow, wizard progress | Login sessions, authentication, tracking                                            |
+
+</details>
+
+---
+
+## Question 4
+
+What is the difference between **Reflow** and **Repaint** in browsers?
+
+<details>
+<summary>Show Answer</summary>
+
+| Feature      | Reflow                                         | Repaint                                                   |
+| ------------ | ---------------------------------------------- | --------------------------------------------------------- |
+| Definition   | Browser recalculates layout of elements        | Browser redraws visual appearance without changing layout |
+| Triggered by | Width/height, DOM changes, font/margin changes | Color, background, shadow, visibility                     |
+| Performance  | Expensive                                      | Cheaper                                                   |
+
+</details>
+
+---
+
+## Question 5
+
+What is the difference between Controlled and Uncontrolled components in React?
+
+<details>
+<summary>Show Answer</summary>
+
+**Controlled Component**  
+React controls the input using state.
+
+```js
+<input value={name} onChange={(e) => setName(e.target.value)} />
+```
+
+**Uncontrolled Component**  
+The input manages its own value using `ref`.
+
+```js
+<input ref={inputRef} />
+```
+
+---
+
+### Simple Difference
+
+👉 Controlled → React controls the input  
+👉 Uncontrolled → DOM controls the input
+
+</details>
+
+---

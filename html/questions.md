@@ -28,6 +28,8 @@ Form data is sent as **name–value pairs**. Without `name`, the input is ignore
 
 </details>
 
+---
+
 ## Question 2
 
 What is the difference between `disabled` and `readonly` attributes?
@@ -42,6 +44,8 @@ What is the difference between `disabled` and `readonly` attributes?
 
 </details>
 
+---
+
 ## Question 3
 
 What is the difference between `DOMContentLoaded` and `load` events?
@@ -55,6 +59,8 @@ What is the difference between `DOMContentLoaded` and `load` events?
 - `load` is used when images or assets are required
 
 </details>
+
+---
 
 ## Question 3
 
@@ -73,6 +79,8 @@ This improves security and protects the original page.
 
 </details>
 
+---
+
 ## Question 4
 
 Why do we use the `alt` attribute in the `<img>` tag?
@@ -87,6 +95,8 @@ Why do we use the `alt` attribute in the `<img>` tag?
 
 </details>
 
+---
+
 ## Question 5
 
 Will creating a custom HTML tag like `<rishabh>` throw an error? If not, how does it behave?
@@ -97,5 +107,30 @@ Will creating a custom HTML tag like `<rishabh>` throw an error? If not, how doe
 - It will NOT throw any error
 - Browsers allow unknown HTML tags
 - Unknown tags behave like inline elements by default
+
+</details>
+
+---
+
+## Question 6
+
+What does **UTF-8** mean in HTML?
+
+<details>
+  <summary><strong>Show Answer</strong></summary>
+
+**UTF-8** is a character encoding that allows HTML pages to display text, symbols, and characters from almost all languages correctly.
+
+It is defined in HTML using:
+
+```html
+<meta charset="UTF-8" />
+```
+
+### 🧠 Why it is used
+
+- Supports most global characters and emojis
+- Prevents text display issues
+- Standard encoding for modern websites
 
 </details>
