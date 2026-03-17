@@ -1,14 +1,21 @@
-const flattenArray = (arr, result = []) => {
-  for (item of arr) {
-    if (Array.isArray(item)) {
-      flattenArray(item, result);
-    } else {
-      if (!result.includes(item)) {
-        result.push(item);
-      }
+const throttle = (fn, delay) => {
+  let timer;
+  return (...args) => {
+    if (!timer) {
+      timer = setTimeout(() => {
+        fn(...args);
+        timer = null;
+      }, delay);
     }
-  }
-  return result;
+  };
 };
 
-console.log(flattenArray([[1, [2, 3], [4, [5, 6, 2]], 3]]));
+const search = (str) => {
+  console.log(str);
+};
+const debouncedSearch = throttle(search, 3000);
+
+debouncedSearch("r");
+debouncedSearch("ri");
+debouncedSearch("ris");
+debouncedSearch("rish");
