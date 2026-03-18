@@ -1,21 +1,13 @@
-const throttle = (fn, delay) => {
-  let timer;
-  return (...args) => {
-    if (!timer) {
-      timer = setTimeout(() => {
-        fn(...args);
-        timer = null;
-      }, delay);
+const flattenArray = (arr) => {
+  let result = [];
+
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result = result.concat(flattenArray(item));
+    } else {
+      result.push(item);
     }
-  };
+  }
+  return result;
 };
-
-const search = (str) => {
-  console.log(str);
-};
-const debouncedSearch = throttle(search, 3000);
-
-debouncedSearch("r");
-debouncedSearch("ri");
-debouncedSearch("ris");
-debouncedSearch("rish");
+console.log(flattenArray([1, [2, 3], [4, [5, 6]]]));

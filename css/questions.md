@@ -37,3 +37,39 @@ What is the difference between **Flexbox** and **Grid** in CSS?
 | Complexity    | Simple and flexible                     | More powerful but slightly complex      |
 
 </details>
+
+---
+
+## Question 3
+
+What is the difference between `px`, `rem`, `em`, and `%` in CSS?
+
+<details>
+<summary>Show Answer</summary>
+
+**1. `px` (Pixels)**
+Fixed size.
+👉 `16px` will always be `16px`.
+
+**2. `rem`**
+Based on root (`html`) font size.
+👉 `1rem` = usually `16px`.
+
+**3. `em`**
+Based on parent font size.
+👉 Can change depending on parent.
+
+**4. `%` (Percentage)**
+Based on parent size (width/height).
+👉 Used for layouts.
+
+---
+
+### Simple Difference
+
+👉 **`px`** → Fixed size  
+👉 **`rem`** → Based on root  
+👉 **`em`** → Based on parent  
+👉 **`%`** → Based on parent size
+
+</details>

@@ -149,3 +149,36 @@ The input manages its own value using `ref`.
 </details>
 
 ---
+
+## Question 6
+
+What is `useLayoutEffect` in React?
+
+<details>
+<summary>Show Answer</summary>
+
+**useLayoutEffect** runs before the screen updates (before the user sees the UI).
+
+```js
+useLayoutEffect(() => {
+  console.log("Runs before paint");
+}, []);
+```
+
+---
+
+### Simple Difference
+
+👉 **useEffect** → runs after screen updates  
+👉 **useLayoutEffect** → runs before screen updates
+
+---
+
+### When to use
+
+👉 Fix UI before user sees it (no flicker)  
+👉 Measure DOM (height, width, etc.)
+
+</details>
+
+---
