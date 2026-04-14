@@ -9,7 +9,7 @@ This document contains **important and tricky React interview questions** focuse
 How can we return multiple elements from a component without using a parent `<div>` or `Fragment`?
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 ```js
 function Example() {
@@ -50,7 +50,7 @@ function Counter() {
 ```
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 ```
 1
@@ -85,7 +85,7 @@ setCount((prev) => prev + 1);
 What is the difference between **Browser Storage options** (`localStorage`, `sessionStorage`, and `cookies`)?
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 ### 📊 Difference
 
@@ -106,7 +106,7 @@ What is the difference between **Browser Storage options** (`localStorage`, `ses
 What is the difference between **Reflow** and **Repaint** in browsers?
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 | Feature      | Reflow                                         | Repaint                                                   |
 | ------------ | ---------------------------------------------- | --------------------------------------------------------- |
@@ -123,7 +123,7 @@ What is the difference between **Reflow** and **Repaint** in browsers?
 What is the difference between Controlled and Uncontrolled components in React?
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 **Controlled Component**  
 React controls the input using state.
@@ -155,7 +155,7 @@ The input manages its own value using `ref`.
 What is `useLayoutEffect` in React?
 
 <details>
-<summary>Show Answer</summary>
+<summary><b>Show Answer</b></summary>
 
 **useLayoutEffect** runs before the screen updates (before the user sees the UI).
 
@@ -178,6 +178,104 @@ useLayoutEffect(() => {
 
 👉 Fix UI before user sees it (no flicker)  
 👉 Measure DOM (height, width, etc.)
+
+</details>
+
+## Question 7
+
+Why are React state updates asynchronous instead of synchronous?
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+React updates state asynchronously to **keep the app fast and avoid extra re-renders**.
+
+```javascript
+setCount(1);
+setCount(2);
+setCount(3);
+```
+
+👉 Instead of updating 3 times, React updates only once.
+
+This helps:
+
+- Make the app faster
+- Avoid unnecessary updates
+
+> **Simple idea:** React waits a little and updates everything together (this process is known as _batching_).
+
+</details>
+
+## Question 8
+
+What is the difference between State and Props in React?
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+| Feature          | State                                  | Props                             |
+| :--------------- | :------------------------------------- | :-------------------------------- |
+| **Definition**   | Data managed **inside** the component. | Data passed **to** the component. |
+| **Mutatability** | Can be changed (Mutable).              | Read-only (Immutable).            |
+| **Ownership**    | Owned by the component itself.         | Owned by the parent component.    |
+
+</details>
+
+## Question 9
+
+What are Pure Components in React?
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+A **Pure Component** is a component that only re-renders if its **props or state** have actually changed.
+
+```javascript
+// In Class Components:
+class MyComponent extends React.PureComponent { ... }
+
+// In Functional Components:
+const MyComponent = React.memo((props) => { ... });
+```
+
+👉 By default, a regular component re-renders whenever its parent re-renders. A Pure Component performs a **"shallow comparison"** to check for changes first.
+
+This helps:
+
+- **Boost performance** by skipping unnecessary re-renders.
+- **Optimize** large lists or complex UI trees.
+
+> **Simple idea:** If the input (props/state) looks exactly the same as last time, React skips the work of rendering it again.
+
+</details>
+
+## Question 10
+
+How can you optimize the performance of a React application?
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+Performance in React is mostly optimized by **reducing re-renders** and **decreasing bundle size**.
+
+### 1. Prevent Unnecessary Re-renders
+
+- **`React.memo`**: Skips re-rendering a component if its props haven't changed.
+- **`useCallback`**: Memoizes functions so they aren't re-created on every render.
+- **`useMemo`**: Memoizes expensive calculations.
+
+### 2. Efficient Rendering
+
+- **Windowing/Virtualization**: Only render items currently visible on the screen (using libraries like `react-window`).
+- **Lazy Loading**: Use `React.lazy` and `Suspense` to load components only when needed.
+
+### 3. Best Practices
+
+- **State Colocation**: Keep state as close to where it's used as possible to limit the "render impact."
+- **Keys**: Always use unique and stable `key` props for list items.
+
+> **Simple idea:** Don't do the same work twice. If data hasn't changed, tell React to skip the render.
 
 </details>
 

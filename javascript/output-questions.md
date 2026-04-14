@@ -468,6 +468,53 @@ Final result becomes `"1,3,52,4,5"`.
 
 </details>
 
+## Question 19
+
+```js
+console.log(0.1 + 0.2 === 0.3);
+```
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+```
+false
+```
+
+**Explanation:**
+
+- Computers use **binary floating-point math**, which can't perfectly represent simple decimals like `0.1`.
+- `0.1 + 0.2` actually equals `0.30000000000000004`.
+- Because of this tiny rounding error, it is not exactly equal to `0.3`.
+
+Final result is `false`.
+
+</details>
+
+## Question 20
+
+```js
+let obj = {};
+console.log(obj.__proto__ === Object.prototype);
+```
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+```
+true
+```
+
+**Explanation:**
+
+- Every object in JavaScript has a hidden property called `__proto__`.
+- When you create an object using literal notation (`{}`), it automatically links to the built-in **Object.prototype**.
+- This link is how objects inherit methods like `.toString()` or `.hasOwnProperty()`.
+
+Final result is `true`.
+
+</details>
+
 ## 💡 One‑Liner Summary
 
 > Most JavaScript “tricks” come from **hoisting**, **type coercion**, and **reference behavior** — master these, and no question will surprise you again 🚀
