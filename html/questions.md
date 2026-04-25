@@ -134,3 +134,28 @@ It is defined in HTML using:
 - Standard encoding for modern websites
 
 </details>
+
+## Question 7
+
+What is the `aria-label` attribute used for in HTML?
+
+<details>
+<summary><strong>Show Answer</strong></summary>
+
+The `aria-label` attribute provides a **text label** for elements that don't have visible text on the screen.
+
+It is commonly used for interactive elements like icon buttons:
+
+```html
+<button aria-label="Close Menu">
+  <i class="fas fa-times"></i>
+</button>
+```
+
+### 🧠 Why it is used
+
+- **Accessibility:** Screen readers will **announce** the label so users with visual impairments know the element's purpose.
+- **Context:** It provides a name to elements that only contain an icon or graphic.
+- **Standards:** It helps your website meet WCAG (Web Content Accessibility Guidelines) requirements.
+
+</details>

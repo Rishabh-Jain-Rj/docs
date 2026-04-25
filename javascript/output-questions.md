@@ -515,6 +515,37 @@ Final result is `true`.
 
 </details>
 
+## Question 21
+
+```js
+for (var i = 0; i < 3; i++) {
+  function fn(val) {
+    setTimeout(() => {
+      console.log(val);
+    }, 500);
+  }
+  fn(i);
+}
+```
+
+<details>
+<summary><b>Show Answer</b></summary>
+
+```
+0
+1
+2
+```
+
+**Explanation:**
+
+- You might expect this to print `3, 3, 3` (which is a common `var` trap), but here it actually works "correctly."
+- By wrapping the `setTimeout` inside the function `fn(i)`, we are creating a **new scope** for every loop.
+- Each time the loop runs, we "capture" the current value of `i` and pass it into the function as `val`.
+- Even though `setTimeout` waits half a second, the `val` inside that specific function call stays locked at whatever `i` was at that moment.
+
+</details>
+
 ## 💡 One‑Liner Summary
 
 > Most JavaScript “tricks” come from **hoisting**, **type coercion**, and **reference behavior** — master these, and no question will surprise you again 🚀
